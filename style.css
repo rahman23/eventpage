@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Sarabun");
+
+body {
+  font-family: "Sarabun", sans-serif !important;
+  margin: 0px;
+}
+
+#section1 {
+  position: relative;
+  height: 100vh;
+  background: url("./img/back.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 70px;
+}
+
+.container {
+  position: absolute;
+  top: -55vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.container p {
+  width: 90vh;
+  line-height: 20px;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 5.3rem;
+  color: white;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#count {
+  font-size: 3rem;
+  padding: 30px;
+  color: white;
+}
+button {
+  text-decoration: none;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border-radius: 10px;
+  border: #fff 1.5px solid;
+  background-color: Transparent;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 550;
+  max-height: 3rem;
+}
+
+button:hover {
+  background: white;
+  border: #2c2f33 1.5px solid;
+  color: #2c2f33;
+}
+
+#button1,
+#button2 {
+  display: inline-block;
+  
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+  overflow: hidden;
+  margin-top: -65px;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.info {
+  padding: 20px;
+  color: white;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: #ef4836ee;
+}
+.info .fas {
+  display: inline-block;
+  vertical-align: middle;
+}
+.right {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.info h3,
+p {
+  padding: 5px;
+  margin: 0 !important;
+}
+
+#section2 {
+  text-align: center;
+  padding: 2rem;
+}
+.boxes {
+  display: flex;
+  padding: 2em;
+}
+.box {
+  padding: 1em;
+}
+
+.rounded {
+  border-radius: 50%;
+  width: 22vh;
+}
+
+#section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  border: 2px solid #ef4836;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #ef4836;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.grid {
+  background: url("./img/grid.png") no-repeat center center;
+  width: 100%;
+}
+#section3 {
+  background: url("./img/handshake.jpeg") no-repeat center center;
+  height: 15vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#section3 p {
+  font-size: 2rem;
+  font-weight: 550;
+  color: white;
+}
+
+#section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.card {
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 10px;
+}
+.card:hover {
+  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+.list .heading {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  word-spacing: 1px;
+  display: block;
+  background-color: #2c2f33;
+  padding: 10px;
+}
+.list .price {
+  font-size: 1.5rem;
+  text-align: center;
+  border-right: 1px solid;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ef4836;
+  margin: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+.list li {
+  overflow: hidden;
+
+  display: flex;
+  margin: 0;
+}
+.list li:nth-child(2n + 2) {
+  background: #f6f6f6;
+}
+.text-center {
+  padding: 15px;
+}
+#buy {
+  border: none;
+  padding: 15px;
+  margin: 0;
+  background: #22313f;
+  border-radius: 0;
+}
+
+#buy:hover {
+  background: black;
+  color: white;
+}
+.heading {
+  color: #fff;
+  margin: 0;
+  word-spacing: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+
+  .container p {
+    width: 40vh;
+  }
+  .grid {
+    visibility: hidden;
+  }
+  #section2 h2 p {
+    padding: 0;
+    margin: 2px;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  #section3 p{
+    font-size: 1.3rem;
+  }
+  #button2 {
+    font-size: .8rem;
+  }
+  #section4 {
+    flex-direction: column;
+  }
+}

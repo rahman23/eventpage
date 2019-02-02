@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script>
+
+
+        var countDownDate = new Date("Feb 28, 2019 15:37:25").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("count").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s LEFT";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("count").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <section id="section1">
+        <div class="container">
+            <h1><span class="hand">EVENTIAL 2019</span> </h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            <div class="wrapper"> <button type="button" id="button1">Read More</button>
+                <button type="button" id="button2">About</button>
+            </div>
+            <span id="count"></span>
+        </div>
+    </section>
+
+
+    <div class="container2">
+        <div class="info">
+            <i class="fas fa-calendar-alt fa-3x"></i>
+
+            <div class="right">
+                <h3>Date</h3>
+                <p>05.04.2019</p>
+            </div>
+
+        </div>
+        <div class="info"> <i class="fas fa-chair fa-3x"></i>
+
+            <div class="right">
+                <h3>Seats</h3>
+                <p>300 People</p>
+            </div>
+        </div>
+        <div class="info"> <i class="fas fa-map-pin fa-3x"></i>
+
+            <div class="right">
+                <h3>Location</h3>
+                <p>Central Hall, London</p>
+            </div>
+        </div>
+        <div class="info"> <i class="fas fa-microphone-alt fa-3x"></i>
+
+            <div class="right">
+                <h3>Speakers</h3>
+                <p>18 Experts</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section id="section2">
+        <div class="boxes">
+            <div class="box">
+
+                <img class="rounded" src="./img/1.jpeg" alt="Free Choice">
+
+
+                <h1>Innovation</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet clita
+                    kasd gubergren, no sea takimata sanctus est Lorem ipsum. </p>
+
+            </div>
+            <div class="box">
+                <img class="rounded" src="./img/2.jpeg" alt="Free Choice">
+
+
+                <h1>New Social Media Trends</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet clita
+                    kasd gubergren, no sea takimata sanctus est Lorem ipsum. </p>
+            </div>
+
+            <div class="box">
+                <img class="rounded" src="./img/3.jpeg" alt="Free Choice">
+
+
+                <h1>Networking</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet clita
+                    kasd gubergren, no sea takimata sanctus est Lorem ipsum. </p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="section3">
+
+        <p>Interested to learn more about products?</p>
+        <button type="button" id="button2">Visit Our Page</button>
+    </section>
+
+    <section id="section4">
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tabone" checked="checked">
+            <label for="tabone">About Event</label>
+            <div class="tab">
+                <h1>Tab 1 Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet. </p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet. </p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet. </p>
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabtwo">
+            <label for="tabtwo">Who are we?</label>
+            <div class="tab">
+                <h1>Tab 2 Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet. </p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet. </p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet. </p>
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="grid"></div>
+
+    </section>
+
+
+    <section id="section4">
+
+        <div class="card">
+
+            <ul class="list">
+                <li class="price-heading">
+                    <span class="price">$12</span>
+                    <span class="heading">for 1 person</span>
+                </li>
+                <li class="text-center">Comfortable Seat</li>
+                <li class="text-center">Lorem ipsum</li>
+                <li class="text-center">Dolor sit amet</li>
+                <li class="text-center">
+                    <button type="button" id="buy"><i class="fas fa-chair"></i> Buy Now</a></button>
+            </ul>
+        </div>
+        <div class="card">
+
+            <ul class="list">
+                <li class="price-heading">
+                    <span class="price">$20</span>
+                    <span class="heading">for 2 person</span>
+                </li>
+                <li class="text-center">Comfortable Seat</li>
+                <li class="text-center">Lorem ipsum</li>
+                <li class="text-center">Dolor sit amet</li>
+                <li class="text-center">
+                    <button type="button" id="buy"><i class="fas fa-chair"></i> Buy Now</a></button>
+            </ul>
+        </div>
+
+        <div class="card">
+
+            <ul class="list">
+                <li class="price-heading">
+                    <span class="price">$30</span>
+                    <span class="heading">for 4 person</span>
+                </li>
+                <li class="text-center">Comfortable Seat</li>
+                <li class="text-center">Lorem ipsum</li>
+                <li class="text-center">Dolor sit amet</li>
+                <li class="text-center">
+                    <button type="button" id="buy"><i class="fas fa-chair"></i> Buy Now</a></button>
+            </ul>
+        </div>
+        <div class="card">
+
+            <ul class="list">
+                <li class="price-heading">
+                    <span class="price">$40</span>
+                    <span class="heading">for 6 person</span>
+                </li>
+                <li class="text-center">Comfortable Seat</li>
+                <li class="text-center">Lorem ipsum</li>
+                <li class="text-center">Dolor sit amet</li>
+                <li class="text-center">
+                    <button type="button" id="buy"><i class="fas fa-chair"></i> Buy Now</a></button>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
