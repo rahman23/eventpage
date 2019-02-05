@@ -20,9 +20,21 @@ body {
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+
   text-align: center;
   color: #fff;
 }
@@ -31,6 +43,7 @@ body {
   width: 90vh;
   line-height: 20px;
   padding: 20px;
+  display: contents;
 }
 
 .container h1 {
@@ -70,7 +83,6 @@ button:hover {
 #button1,
 #button2 {
   display: inline-block;
-  
 }
 
 .wrapper {
@@ -78,10 +90,18 @@ button:hover {
 }
 
 .container2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   overflow: hidden;
   margin-top: -65px;
   justify-content: space-around;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: center;
   position: relative;
   z-index: 1;
 }
@@ -115,6 +135,10 @@ p {
   padding: 2rem;
 }
 .boxes {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   padding: 2em;
 }
@@ -129,11 +153,27 @@ p {
 
 #section4 {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   justify-content: space-around;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: center;
 }
 .tabs {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .tabs label {
@@ -175,8 +215,17 @@ p {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -moz-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+
   align-items: center;
+  -ms-flex-pack: center;
 }
 #section3 p {
   font-size: 2rem;
@@ -186,8 +235,18 @@ p {
 
 #section4 {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -moz-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: center;
   padding: 50px;
 }
 .card {
@@ -230,8 +289,11 @@ p {
 }
 .list li {
   overflow: hidden;
-
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   margin: 0;
 }
 .list li:nth-child(2n + 2) {
@@ -284,17 +346,23 @@ p {
   .boxes {
     display: flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
   }
   .container2 {
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
   }
-  #section3 p{
+  #section3 p {
     font-size: 1.3rem;
   }
   #button2 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   #section4 {
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
