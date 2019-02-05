@@ -40,9 +40,7 @@ body {
 }
 
 .container p {
-  width: 90vh;
   line-height: 20px;
-  padding: 20px;
   display: contents;
 }
 
@@ -86,6 +84,7 @@ button:hover {
 }
 
 .wrapper {
+  padding:30px;
   text-align: center;
 }
 
