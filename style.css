@@ -8,17 +8,16 @@ body {
 #section1 {
   position: relative;
   height: 100vh;
-  background: url("./img/back.jpg") no-repeat center center;
+  background: url("./img/backg.jpg") no-repeat center center;
   background-size: cover;
   padding: 70px;
 }
 
 .container {
   position: absolute;
-  top: -55vh;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -40,13 +39,19 @@ body {
 }
 
 .container p {
-  line-height: 20px;
-  display: contents;
+  color: rgba(255, 255, 255, 0.979);
+  width:70vh;
+  font-weight:550;
+  font-size: 1.1rem;
+  text-align:center;
+  margin-left:auto !important;
+  margin-right: auto !important;
+
 }
 
 .container h1 {
-  font-size: 5.3rem;
-  color: white;
+  font-size: 5em;
+  color: rgba(34, 34, 34, 0.89);
   padding: 0;
   margin-bottom: 0;
 }
@@ -321,6 +326,12 @@ p {
 }
 
 @media (max-width: 900px) {
+  .container {
+    
+    top: 40%;
+    left: 50%;
+    
+  }
   .tabs .tab,
   .tabs label {
     order: initial;
@@ -330,6 +341,11 @@ p {
     margin-right: 0;
     margin-top: 0.2rem;
   }
+
+  #count {
+    font-size: 1.8rem;
+
+}
 
   .container p {
     width: 40vh;
@@ -355,9 +371,7 @@ p {
   #section3 p {
     font-size: 1.3rem;
   }
-  #button2 {
-    font-size: 0.8rem;
-  }
+ 
   #section4 {
     flex-direction: column;
     -webkit-flex-direction: column;
