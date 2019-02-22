@@ -23,30 +23,26 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-
   flex-direction: column;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-
   text-align: center;
   color: #fff;
 }
 
 .container p {
   color: rgba(255, 255, 255, 0.979);
-  width:70vh;
-  font-weight:550;
+  width: 70vh;
+  font-weight: 550;
   font-size: 1.1rem;
-  text-align:center;
-  margin-left:auto !important;
+  text-align: center;
+  margin-left: auto !important;
   margin-right: auto !important;
-
 }
 
 .container h1 {
@@ -82,13 +78,8 @@ button:hover {
   color: #2c2f33;
 }
 
-#button1,
-#button2 {
-  display: inline-block;
-}
-
 .wrapper {
-  padding:30px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -127,8 +118,7 @@ button:hover {
   padding-left: 15px;
 }
 
-.info h3,
-p {
+.info h3 {
   padding: 5px;
   margin: 0 !important;
 }
@@ -327,10 +317,8 @@ p {
 
 @media (max-width: 900px) {
   .container {
-    
     top: 40%;
     left: 50%;
-    
   }
   .tabs .tab,
   .tabs label {
@@ -344,8 +332,7 @@ p {
 
   #count {
     font-size: 1.8rem;
-
-}
+  }
 
   .container p {
     width: 40vh;
@@ -371,7 +358,7 @@ p {
   #section3 p {
     font-size: 1.3rem;
   }
- 
+
   #section4 {
     flex-direction: column;
     -webkit-flex-direction: column;
