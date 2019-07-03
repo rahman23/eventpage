@@ -32,14 +32,14 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.979);
 }
 
-.container p {
-  color: rgba(255, 255, 255, 0.979);
+.container p {  
   width: 70vh;
   font-weight: 550;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  letter-spacing:4px;
   text-align: center;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -47,7 +47,6 @@ body {
 
 .container h1 {
   font-size: 5em;
-  color: rgba(34, 34, 34, 0.89);
   padding: 0;
   margin-bottom: 0;
 }
@@ -59,7 +58,7 @@ body {
 }
 button {
   text-decoration: none;
-  padding: 1em;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -68,7 +67,7 @@ button {
   border: #fff 1.5px solid;
   background-color: Transparent;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.3rem;
   font-weight: 550;
   max-height: 3rem;
 }
@@ -79,7 +78,7 @@ button:hover {
 }
 
 .wrapper {
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -183,7 +182,7 @@ button:hover {
 .tabs .tab {
   order: 99;
   flex-grow: 1;
-  width: 100%;
+  max-width:90vh;
   display: none;
   padding: 1rem;
   background: #fff;
