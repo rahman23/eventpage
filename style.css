@@ -344,7 +344,7 @@ button:hover {
     font-size: 1.3rem;
   }
 
-  #section4 {
+  #section4, #section5 {
     flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
