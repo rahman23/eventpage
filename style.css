@@ -143,7 +143,7 @@ button:hover {
   width: 22vh;
 }
 
-#section4 {
+#section4,#section5 {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
