@@ -157,7 +157,7 @@ button:hover {
   -moz-box-pack: space-around;
   -webkit-justify-content: space-around;
   -ms-flex-pack: center;
-  padding:150px;
+  padding:100px;
 }
 .tabs {
   display: flex;
