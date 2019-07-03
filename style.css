@@ -157,6 +157,7 @@ button:hover {
   -moz-box-pack: space-around;
   -webkit-justify-content: space-around;
   -ms-flex-pack: center;
+  padding:150px;
 }
 .tabs {
   display: flex;
@@ -225,22 +226,7 @@ button:hover {
   color: white;
 }
 
-#section4 {
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -moz-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: center;
-  padding: 50px;
-}
+
 .card {
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
